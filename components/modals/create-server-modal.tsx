@@ -7,16 +7,16 @@ import { useForm } from "react-hook-form"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../ui/form"
 import { Input } from "../ui/input"
 import { Button } from "../ui/button"
-import FileUpload from "../file-upload"
+import {FileUpload} from "../file-upload"
 import axios from "axios";
 import { useRouter } from "next/navigation"
 import { useModal } from "@/hooks/use-modal-store"
 const formSchema = z.object({
     name: z.string().min(1, {
-        message: "server name is req"
+        message: "server name is required"
     }),
     imageUrl: z.string().min(1, {
-        message: "server image is req"
+        message: "server image is required"
     }),
 })
 
@@ -38,10 +38,10 @@ export const CreateServerModal = () => {
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
             await axios.post("/api/servers",values)
-            form.reset;
+            form.reset();
             router.refresh();
             onClose();
-            window.location.reload();
+            
         } catch (error) {
             console.log(error);
             
