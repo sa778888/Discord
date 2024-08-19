@@ -1,5 +1,5 @@
 ##Deployment Link: 
-https://discord-production-fb85.up.railway.app/
+https://dashboard.render.com/web/srv-cr1es2i3esus73atuhl0/deploys/dep-cr1es2q3esus73atui20
 
 
 
