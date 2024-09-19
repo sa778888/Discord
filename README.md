@@ -1,7 +1,5 @@
 ##Deployment Link: 
-https://dashboard.render.com/web/srv-cr1es2i3esus73atuhl0/deploys/dep-cr1es2q3esus73atui20
-
-
+https://discord-yef2.onrender.com/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
